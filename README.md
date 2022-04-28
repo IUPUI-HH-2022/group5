@@ -6,3 +6,6 @@ On each page, I added necessary meta data, inked stylesheet and JS script and ad
 
 23 April, 2022
 Small changes, change all the "America" into "United States".
+
+28 April, 2022
+Deleted "the Philippines" page.
