@@ -24,6 +24,14 @@ p {
   margin-left: 100px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: #50AED8 underline;
+}
+
 .group-text p {
   font-size: 15px;
   font-family: Segoeui light;
