@@ -22,7 +22,7 @@ img {
 .race h1 {
   font-family: source-serif-pro;
   font-size: 54px;
-  text-decoration: #50AED8 underline;
+  text-decoration: #50AED8;
   color: #4C4D63;
 }
 
@@ -35,7 +35,7 @@ a:link {
 }
 
 a:hover {
-  text-decoration: #50AED8 underline;
+  text-decoration: #50AED8;
 }
 
 #container {
