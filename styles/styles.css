@@ -1,33 +1,72 @@
-/* General styles */
+/* General styles starts */
 body {
   background-color: #F5F6F8;
-  margin: 0px;
+  margin: 0;
 }
 
 header {
-  margin-top: 50px;
+  grid-area: header;
+  /* padding-left: 10px;
+  background-color: yellow; */
+}
+
+nav {
+  grid-area: nav;
+  /* padding: 10px;
+  background-color: gray; */
+}
+
+main {
+  grid-area: main;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  /* background-color: orange; */
+}
+
+aside {
+  grid-area: aside;
+  padding: 10px;
+  /* background-color: bisque; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav nav'
+    'header header'
+    'main aside'
+    'footer footer';
+  max-width: 80rem;
+  margin: auto;
 }
 
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #707070;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
+.banner {
+  width: 100%;
+}
+
+.banner_text {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* General styles ends */
+
+/* Other pages CSS starts */
 .race h1 {
   font-family: source-serif-pro;
   font-size: 54px;
-  text-decoration: #50AED8 underline;
+  text-decoration: #50AED8;
   color: #4C4D63;
-}
-
-.race-image {
-  margin-left: 100px;
 }
 
 a:link {
@@ -37,67 +76,44 @@ a:link {
 a:hover {
   text-decoration: #50AED8 underline;
 }
+/* Other pages CSS ends */
 
-#container {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto fit-content;
-}
-
-.group {
-  display: flex;
-}
-
-.home-image {
-  margin-left: 100px;
-  margin-top: 100px;
-}
-
-.home h1 {
-  font-size: 60px;
-  font-family: source-serif-pro;
-  padding-top: 100px;
-  color: #4C4D63;
-}
-
-.home-text {
-  margin-left: 700px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 19px;
-  color: #707070;
-  position: relative;
-  right: 700px;
-  top: -250px;
-}
-
-.home-text-small {
-  color: #4C4D63;
-}
-
-/* FOOTER styles */
+/* Footer CSS starts */
 footer {
-  width: 100%;
+  grid-area: footer;
+  text-align: center;
   height: 2.5rem;
   background-color: #4C4D63
 }
 
 footer p {
-  height: auto;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 50%;
-  margin: 0px;
+  margin: 0;
   color: #F5F6F8;
 }
+/* Footer CSS ends */
 
-/*** Menu styles start here ***/
+/* Menu CSS starts */
+.menuleft {
+  display: inline-block;
+  float: left;
+}
+
+.menuright {
+  display: inline-block;
+  float: right;
+}
+
+.menuright a {
+  margin-left: 1em;
+}
+
 /* Add a white background color to the top navigation */
 .topnav {
   background-color: #F5F6F8;
   overflow: hidden;
   border-bottom: #4C4D63 solid 2px;
-  padding-left: 8%;
+  /* padding-left: 8%; */
 }
 
 /* Style the links inside the navigation bar */
@@ -113,11 +129,6 @@ footer p {
   font-family: source-serif-pro;
 }
 
-/* Create space between Homepage tab and others */
-#other_link {
-  padding-left: 50%;
-}
-
 /* Add an active class to highlight the current page */
 .topnav a.active {
   font-weight: bold;
@@ -129,9 +140,8 @@ footer p {
   display: none;
 }
 
-/*** Menu styles end here ***/
 /*** Mobile-menu styles start here ***/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
   /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
   .topnav a {
@@ -160,116 +170,32 @@ footer p {
     text-align: left;
   }
 }
-
 /*** Mobile-menu styles end here ***/
-/*** Mobile styles start here ***/
-/*** Mobile styles start here ***/
-/*** Mobile styles start here ***/
-/*Styles for screen 1000px and lower*/
-@media screen and (max-width: 1550px) {
-  .home h1 {
-    font-size: 45px;
-    padding-top: 85px;
+/* Menu CSS ends */
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'nav nav'
+      'header header'
+      'main main'
+      'aside aside'
+      'footer footer';
   }
 
-  .home-text {
-    top: -280px;
-  }
-}
-
-@media screen and (max-width: 1450px) {
-  .home h1 {
-    font-size: 45px;
-    padding-top: 60px;
+.race h1 {
+    font-size: 1.7rem;
   }
 
-  .home-text {
-    bottom: 120px;
-  }
+p {
+  font-size: 1.1rem;
 }
 
 
-@media screen and (max-width: 1000px) {
-
-  /* Create space between Homepage tab and others */
-  #other_link {
-    padding-left: 40%;
-  }
-
-  /* Homepage image */
-  .home-image {
-    margin-top: 60px;
-  }
-
-  .home h1 {
-    font-size: 40px;
-    padding-top: 50px;
-  }
-
-  /* .home-text {
-      margin-left: 700px;
-      font-size: 19px;
-      color: #707070;
-      position: relative;
-      right: 700px;
-      bottom: 100px;
-  }
-
-
+.menuright {
+  display: inline-block;
+  float: left;
 }
 
-/*Styles for screen 800px and lower*/
-  @media screen and (max-width: 800px) {
-    #other_link {
-      padding-left: 23%;
-    }
-
-    .home-image {
-      margin-left: 30px;
-      margin-top: 100px;
-    }
-
-    .home h1 {
-      font-size: 30px;
-      padding-top: 50px;
-    }
-
-    img {
-      max-width: 95%;
-      height: auto;
-    }
-  }
-
-  /*Styles for screen 600px and lower*/
-  @media screen and (max-width : 600px) {
-    #container {
-      width: 95%;
-    }
-    #other_link {
-      padding-left: 16px;
-    }
-    .home-image {
-      max-width: 60%;
-      margin-left: 5px;
-      margin-top: 50px;
-    }
-    .home h1 {
-      font-size: 20px;
-      padding-top: 30px;
-    }
-  }
-
-  /*** Mobile styles end here ***/
-  /*font families*/
-  @font-face {
-    font-family: source-serif-pro;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    @font-face {
-      font-family: "Segoeui light";
-      src: url(../styles/fonts/SEGOEUI.TTF);
-    }
-  }
+}
