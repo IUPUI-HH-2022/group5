@@ -27,6 +27,7 @@ aside {
   grid-area: aside;
   padding: 10px;
   /* background-color: bisque; */
+
 }
 
 .grid-container {
@@ -46,8 +47,10 @@ p {
   color: #707070;
 }
 
+
 img {
   width: 100%;
+
 }
 
 .banner {
