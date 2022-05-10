@@ -1,0 +1,49 @@
+nav {
+  grid-area: nav;
+  margin-bottom: 10%;
+}
+
+aside {
+  grid-area: aside;
+  padding-right: 1.5rem;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 10%;
+}
+
+/* Homepage CSS starts*/
+.home-h1 {
+  font-family: source-serif-pro;
+  font-size: 2.5rem;
+  color: #4C4D63;
+}
+
+.home-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  color: #707070;
+}
+
+.home-text-small {
+  font-size: 1.25rem;
+  color: #4C4D63;
+}
+
+/* Homepage CSS ends*/
+
+@media screen and (max-width: 900px) {
+  .home-h1 {
+    font-size: 1.7rem;
+  }
+
+  .home-text {
+    font-size: 1.1rem;
+  }
+
+  .home-text-small {
+    font-size: 1.1rem;
+  }
+
+}
