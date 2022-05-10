@@ -187,18 +187,25 @@ footer p {
       'footer footer';
   }
 
-.race h1 {
+  .menuright {
+    display: inline-block;
+    float: left;
+  }
+
+  .race h1 {
     font-size: 1.7rem;
   }
 
-p {
-  font-size: 1.1rem;
-}
+  p {
+    font-size: 1.1rem;
+  }
 
+  footer {
+    height: 1.5rem;
+  }
 
-.menuright {
-  display: inline-block;
-  float: left;
-}
-
+  footer p {
+    padding-top: 0.3rem;
+    font-size: 0.8rem;
+  }
 }
